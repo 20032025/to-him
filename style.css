@@ -1,0 +1,84 @@
+
+body {
+  background-color: #fff599;
+  font-family: 'Amiri', serif;
+font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stickers-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stickers-container img {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+}
+
+.heart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.click-here {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.heart {
+  font-size: 24px;
+  cursor: pointer;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.message-container {
+  display: none;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+
+}
+
+.show-message {
+  display: block;
+  max-height: 500px;
+  
+  max-height: 500px;
+  overflow-y: hidden;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    scroll-behavior: smooth;
+
+}
